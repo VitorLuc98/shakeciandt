@@ -16,16 +16,19 @@ public class Cardapio {
     }
 
     public void adicionarIngrediente(Ingrediente ingrediente,Double preco){
+        precos.put(ingrediente, preco);
         //TODO
     }
 
     public boolean atualizarIngrediente(Ingrediente ingrediente,Double preco){
        //TODO
+        precos.replace(ingrediente, preco);
         return true;
     }
 
     public boolean removerIngrediente(Ingrediente ingrediente){
        //TODO
+        precos.remove(ingrediente);
         return true;
     }
 
